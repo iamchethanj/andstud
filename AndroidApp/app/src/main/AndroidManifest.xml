@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apptronix.alfred">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Alfred"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_bulb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_bulb"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".data.DBProvider"
+            android:authorities="com.apptronix.alfred.data.DBProvider"
+            android:exported="false" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service
+            android:name=".service.AuthService"
+            android:exported="false" />
+        <service
+            android:name=".service.DataService"
+            android:exported="false" />
+
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AddControlItemActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".ui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apptronix.alfred.ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.createActivity" />
+        <activity android:name=".ui.scheduleActivity"></activity>
+    </application>
+
+</manifest>

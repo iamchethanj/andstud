@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "25667199244",
+    "firebase_url": "https://smart-light-6a561.firebaseio.com",
+    "project_id": "smart-light-6a561",
+    "storage_bucket": "smart-light-6a561.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25667199244:android:3fe662ce486a7492",
+        "android_client_info": {
+          "package_name": "com.apptronix.alfred"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25667199244-oapkk1li1or8l68r9m0lugqhuv860ko9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apptronix.alfred",
+            "certificate_hash": "8e9daac1f00e25bdc5d2809dc31f3097850ea214"
+          }
+        },
+        {
+          "client_id": "25667199244-6vrfmn6kif5psmu2p8q3t8v5q9701sat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOr5vzwAsKD0xMisgAezfJUD0dvHX2Bfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25667199244-6vrfmn6kif5psmu2p8q3t8v5q9701sat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

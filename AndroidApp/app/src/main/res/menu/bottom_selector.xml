@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:enabled="true"
+        android:id="@+id/action_power"
+        android:title="@string/power"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_power_black_24dp"/>
+
+    <item
+        android:icon="@drawable/lightbulb"
+        android:enabled="true"
+        android:id="@+id/action_lightbulb"
+        android:title="@string/light"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:icon="@drawable/fan"
+        android:enabled="true"
+        android:id="@+id/action_fan"
+        android:title="@string/fan"
+        app:showAsAction="ifRoom" />
+</menu>
